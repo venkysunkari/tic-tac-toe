@@ -66,7 +66,7 @@ function updateGame() {
             tiles[i].innerHTML = "";
         }
     }
-    id("status").innerHTML = "<b>" + (state.winner ? state.winner + " won!" : isEnd() ? "Tie!" : (state.xIsNext ? "x" : "o") + " is next!") + "</b>";
+    id("status").innerHTML = "<b>" + (state.winner ? state.winner + " won!" : isEnd() ? "Tie!" : (state.xIsNext ? "x" : "o") + " is Next!") + "</b>";
 }
 
 function handleClick(e) {
