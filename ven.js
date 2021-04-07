@@ -16,7 +16,7 @@ addEventListener("load", initGame);
 function initGame() {
     createBoard();
     restartGame();
-    if (window.PointerEvent) { /* decent browsers */     addEventListener('pointerdown', handleClick);    }    else if (window.TouchEvent) { /* mobile Safari */     addEventListener('touchstart', handleClick);    }    else { /* desktop Safari */     etouch.addEventListener('mousedown', handleClick);    }
+    if (window.PointerEvent) {addEventListener('pointerdown', handleClick);    }    else if (window.TouchEvent) {addEventListener('touchstart', handleClick);    }    else { etouch.addEventListener('mousedown', handleClick);    }
     addEventListener('gesturestart', e => {         e.preventDefault();     });    addEventListener('touchmove', e => {         if(e.scale !== 1) {             e.preventDefault();         }     }, {passive: false});
 }
 
