@@ -2,20 +2,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
         <script>
             const $ = el => document.querySelector(el); const $$ = el => document.querySelectorAll(el); const id = arg => document.getElementById(arg); const cl = arg => document.getElementsByClassName(arg); const randint = (min, max) => Math.floor(Math.random() * (max - min + 1) + min); const css = (html_elem, styles) => { for(let attr in styles) html_elem.style[attr] = styles[attr]; }; const hide = html_elem => { html_elem.style.display = "none"; }; const show = (html_elem, value = "block") => { html_elem.style.display = value; };
         </script>
     </head>
     <body>
         <div id="game" class="container">
-            <h1>Tic Tac Toe</h1>
+            <h1>Tic-Tac-Toe</h1>
             <div class="header">
                 <div id="status"></div>
                 <button onclick="restartGame()">restart</button>
                 <div>
                     <select id="select">
-                        <option value="pp">player vs player</option>
+                        <option value="pp">player 1 vs player 2</option>
                         <option value="pb" selected>player vs bot</option>
                         <option value="bp">bot vs player</option>
                         <option value="bb">bot vs bot</option>
